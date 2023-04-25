@@ -1,0 +1,48 @@
+vegenere chiper
+ 52. // Mengubah teks biasa dan kunci menjadi huruf kecil
+59. // Melakukan iterasi pada setiap karakter dari plainText
+63.  // Jika karakter tidak termasuk dalam huruf alfabet, maka langsung tambahkan pada ciphertext
+71. // Melakukan operasi enkripsi menggunakan Vigenere Cipher
+74. // Menambahkan karakter cipher ke dalam hasil akhir
+77. // Menambahkan index kunci
+
+railfence 
+85. // Menghapus spasi pada ciphertext
+
+90. // Menginisialisasi rail fence dengan spasi kosong
+
+104. // Melakukan iterasi pada setiap karakter dari cipherText
+
+108. // Mengubah arah pergerakan rail jika mencapai ujung atas atau bawah
+
+117. // Mengambil karakter pada setiap rail secara berurutan
+
+Menambah alert error
+if (numRails <= 1) {
+    alert("error");
+  }
+
+
+let chiperText = "" , menyimpan hasil dari enkripsi pesan nantinya,dalam variabel chiperText.
+
+let keyIndex = 0, menyimpan index karaktek kunci saat melakukan iterasi pada setiap karakter pesan.
+
+//Loop
+for (let i = 0; i < plainText.length; i++) loop for yang akan melakukan iterasi pada setiap karakter plaintext.
+
+let plainCharCode = plainText.charCodeAt(i); variabel yang menyimpan nilai ASCII dari karakter pada plainText pada index i.
+
+let keyCharCode = key.charCodeAt(keyIndex % key.length); variabel yang menyimpan nilai ASCII dari karakter pada kunci pada index yang sesuai dengan index karakter pesan saat ini. Kunci akan di ulang terus hingga sepanjang pesan menggunakan modulus.
+
+if (plainCharCode < 97 || plainCharCode > 122) {
+      cipherText += plainText.charAt(i);
+      continue;
+    }
+pembahasan :
+
+Code di atas berfungsi untuk mengecek apakah karakter pada pesan yang sedang diproses berada di antara rentang huruf kecil a (kode ASCII 97) dan z (kode ASCII 122). Jika karakter tersebut bukan merupakan huruf kecil, maka karakter tersebut akan langsung ditambahkan ke dalam ciphertext tanpa dienkripsi menggunakan Vigenere Cipher.
+
+Baris pertama (if (plainCharCode < 97 || plainCharCode > 122)) adalah sebuah kondisi if yang mengecek apakah nilai ASCII dari karakter tersebut kurang dari 97 (nilai ASCII untuk huruf 'a') atau lebih besar dari 122 (nilai ASCII untuk huruf 'z'). Jika kondisi ini terpenuhi, maka karakter tersebut bukan merupakan huruf kecil dan harus langsung ditambahkan ke dalam ciphertext tanpa dienkripsi.
+
+Jika kondisi tersebut terpenuhi, maka baris kedua (cipherText += plainText.charAt(i);) akan menambahkan karakter tersebut ke dalam ciphertext, dan perintah continue; pada baris ketiga akan memaksa program melanjutkan ke iterasi berikutnya tanpa mengeksekusi kode yang ada di bawahnya.
+
