@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./dek.css"/>
+    <title>Vigenere Cipher Decryption</title>
+    <script src="./dekrip.js"></script>
+  </head>
+  <body>
+    <h1>Dekripsi Rail Fence Cipher dan Vigenere Cipher</h1>
+
+	<form>
+		<label for="ciphertext">Ciphertext:</label><br>
+		<textarea id="ciphertext" name="ciphertext" rows="5" cols="50"></textarea><br>
+
+		<label for="key">Kunci:</label><br>
+		<input type="text" id="key" name="key"><br>
+
+		<label for="rail">Jumlah Rail:</label><br>
+		<input type="number" id="rail" name="rail" min="2"><br>
+
+		<button type="button" onclick="decrypt()">Dekripsi</button>
+	</form>
+
+	<h2>Hasil Dekripsi:</h2>
+	<div id="decryptedtext"></div>
+  </body>
+</html>

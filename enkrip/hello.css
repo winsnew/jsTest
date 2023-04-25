@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRodRcy0bkG9doctqA-eW6HDM-x3JHPDlfttA&usqp=CAU");
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(113, 195, 206);
+    margin-top: 10px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    color: rgb(143, 151, 155);
+  }
+
+  .input_plaintext, .input_key_rail {
+    margin: 10px;
+  }
+  input {
+    background-color: #40d5f0;
+  }
+  textarea {
+    background-color: #40d5f0;
+  }
+
+  #plaintext {
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  #key {
+    height: 120px;
+    width: 140px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+
+  #rail {
+    width: 140px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  button {
+    background-color: #40d5f0;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 70px;
+    margin-left: 40px;
+    margin-top: 15px;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .result {
+    margin-right: 180px;
+    width: 400px;
+    color: #66797c;
+  }
+  #superEnkripsi {
+    color: black;
+    background-color: #40d5f0;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta />
+    <link rel="stylesheet" href="./hello.css"/>
+    <title>Vigenere Cipher</title>
+    <script src="./chiper.js"></script>
+  </head>
+  <body>
+    <h1>Super Enkripsi</h1>
+    <div class="container">
+      <div class="input_plaintext">
+        <label for="plaintext">Plaintext</label><br/>
+        <textarea id="plaintext" name="plaintext" rows="50"></textarea>
+      </div>
+      <div class="input_key_rail">
+        <label for="key">Key</label><br/>
+        <input type="text" id="key" name="key"/><br/>
+        <label>Rail</label><br/>
+        <input type="number" id="rail" name="numrail"/><br/>
+        <button type="button" onclick="encrypt()">encrypt</button>
+      </div>
+    </div>
+    <section>
+      <div class="result">
+        <label>ChiperText</label>
+        <div id="superEnkripsi">
+          
+        </div>
+        
+      </div>
+    </section>
+
+   
+  </body>
+</html>
